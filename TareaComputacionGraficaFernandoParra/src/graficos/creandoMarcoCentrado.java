@@ -1,6 +1,7 @@
 //Fernando Parra Ci:29.646.700
 package graficos;
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Toolkit;
 
 import javax.swing.JFrame;
@@ -25,6 +26,11 @@ class MarcoCentrado extends JFrame {
 
 		setSize(screenwidth/2, screenheight/2);
 		setLocation(screenheight/4, screenwidth/4);
+
+		setTitle("Titulo De Ventana");
+
+		Image miIcono = miPantalla.getImage("checkmark.png");
+		setIconImage(miIcono);
 
 
 	}
